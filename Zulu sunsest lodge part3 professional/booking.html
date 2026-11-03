@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Request a stay at Zulu Sunset Lodge. Choose your accommodation, dates and guest details to view an estimated total.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><title>Book Your Stay | Zulu Sunset Lodge</title><meta name="theme-color" content="#2f1b12">
+</head><body>
+<a class="skip-link" href="#main-content">Skip to main content</a><header class="header">
+  <div class="navbar">
+    <a class="logo" href="index.html"><h1>ZULU SUNSET LODGE</h1><p>Authentic. Luxurious. Unforgettable.</p></a>
+    <nav class="nav-menu" id="primary-navigation" aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="rooms.html">Suites &amp; Villas</a>
+<a href="services.html">Services</a>
+<a href="dining.html">Dining</a>
+<a href="events.html">Events</a>
+<a href="gallery.html">Gallery</a>
+<a href="booking.html">Booking</a>
+<a href="enquiry.html">Enquiry</a>
+<a href="contact.html">Contact</a>
+</nav>
+<button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+<div class="header-actions"><a class="btn btn-primary" href="booking.html">Book Now</a></div>
+  </div>
+  <div class="sticky-booking-bar"><div class="booking-bar-content"><span>Experience Zulu hospitality on the North Coast</span><a class="btn btn-small" href="booking.html">Reserve Your Stay</a></div></div>
+</header><main id="main-content">
+<section class="page-hero"><div><h2>Book Your Stay</h2><p>Choose your accommodation and complete your reservation details.</p></div></section>
+<section class="booking-page"><div class="form-card">
+<img id="booking-room-image" src="Images/luxury-suite.jpeg" alt="Selected accommodation">
+<h2 id="booking-room-name">Luxury Suite</h2><p id="booking-room-rating" class="rating">★★★★★ 4.8/5</p><p id="booking-room-price" class="room-price">R 2,200 per night</p>
+<form id="booking-form">
+<div class="form-row"><div class="form-field"><label for="name">Full Name</label><input type="text" id="name" name="name" required></div><div class="form-field"><label for="email">Email Address</label><input type="email" id="email" name="email" required></div></div>
+<div class="form-row"><div class="form-field"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required></div><div class="form-field"><label for="room-type">Accommodation</label><input id="room-type" name="room" readonly></div></div>
+<div class="form-row"><div class="form-field"><label for="checkin">Check-in</label><input type="date" id="checkin" name="checkin" required></div><div class="form-field"><label for="checkout">Check-out</label><input type="date" id="checkout" name="checkout" required></div></div>
+<div class="form-row"><div class="form-field"><label for="guests">Number of Guests</label><input type="number" id="guests" name="guests" min="1" max="10" value="1" required></div><div class="form-field"><label for="nights">Number of Nights</label><input type="number" id="nights" name="nights" min="1" max="30" value="1" required></div></div>
+<div class="form-field"><label for="requests">Special Requests</label><textarea id="requests" name="requests" placeholder="Tell us about any special requests..."></textarea></div>
+<div class="notice">Estimated total: <strong id="booking-total">R 2,200</strong></div>
+<button class="btn btn-primary btn-full" type="submit">Continue to Payment</button>
+</form></div></section>
+</main><footer class="footer">
+  <div class="footer-content">
+    <div><h4>Zulu Sunset Lodge</h4><p>A 4-star cultural boutique lodge celebrating Zulu heritage, comfort and unforgettable stays.</p></div>
+    <div><h4>Explore</h4><ul><li><a href="about.html">About</a></li><li><a href="rooms.html">Suites &amp; Villas</a></li><li><a href="services.html">Services</a></li>
+        <li><a href="events.html">Weddings &amp; Events</a></li>
+        <li><a href="enquiry.html">Make an Enquiry</a></li><li><a href="gallery.html">Gallery</a></li></ul></div>
+    <div><h4>Contact</h4><p>North Coast, KwaZulu-Natal<br>+27 (0) 32 555 1234<br>reservations@zulusunset.co.za</p></div>
+  </div>
+  <div class="footer-bottom">&copy; <span id="year"></span> Zulu Sunset Lodge. All rights reserved.</div>
+</footer>
+<script src="script.js" defer></script></body></html>

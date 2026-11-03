@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make an Enquiry | Zulu Sunset Lodge</title>
+<meta name="description" content="Enquire about accommodation, services, events, volunteering or sponsorship at Zulu Sunset Lodge.">
+<meta name="theme-color" content="#2f1b12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="header">
+  <div class="navbar">
+    <a class="logo" href="index.html">
+      <h1>ZULU SUNSET LODGE</h1>
+      <p>Authentic. Luxurious. Unforgettable.</p>
+    </a>
+    <nav class="nav-menu" id="primary-navigation" aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="rooms.html">Suites &amp; Villas</a>
+<a href="services.html">Services</a>
+<a href="dining.html">Dining</a>
+<a href="events.html">Events</a>
+<a href="gallery.html">Gallery</a>
+<a href="booking.html">Booking</a>
+<a href="enquiry.html">Enquiry</a>
+<a href="contact.html">Contact</a>
+</nav>
+<button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+<div class="header-actions">
+      <a class="btn btn-primary" href="booking.html">Book Now</a>
+    </div>
+  </div>
+  <div class="sticky-booking-bar">
+    <div class="booking-bar-content">
+      <span>Experience Zulu hospitality on the North Coast</span>
+      <a class="btn btn-small" href="booking.html">Reserve Your Stay</a>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+<section class="page-hero"><h2>Make an Enquiry</h2><p>Tell us what you have in mind and our team can help you plan the next step.</p></section>
+<section class="content-section form-layout">
+<div class="form-intro"><p class="eyebrow">LET'S PLAN YOUR VISIT</p><h2>How can we help?</h2><p>Use this form for accommodation questions, lodge services, event planning, volunteering or sponsorship enquiries. Fields marked * are required.</p><div class="info-card"><h3>Prefer email?</h3><p><a href="mailto:reservations@zulusunset.co.za">reservations@zulusunset.co.za</a></p></div></div>
+<div class="form-card">
+<form id="enquiry-form" class="validated-form" novalidate>
+<div class="form-row"><div class="form-field"><label for="enquiry-name">Full name *</label><input id="enquiry-name" name="name" autocomplete="name" required minlength="2" maxlength="80"></div><div class="form-field"><label for="enquiry-email">Email address *</label><input id="enquiry-email" name="email" type="email" autocomplete="email" required maxlength="120"></div></div>
+<div class="form-row"><div class="form-field"><label for="enquiry-phone">Phone number</label><input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9+() .-]{7,20}" title="Enter a valid phone number using 7 to 20 digits or common phone symbols."></div><div class="form-field"><label for="enquiry-type">Enquiry type *</label><select id="enquiry-type" name="type" required><option value="">Choose an option</option><option>Accommodation</option><option>Services and activities</option><option>Wedding or event</option><option>Volunteering</option><option>Sponsorship</option><option>Other</option></select></div></div>
+<div class="form-field"><label for="enquiry-date">Preferred date (if applicable)</label><input id="enquiry-date" name="preferredDate" type="date"></div>
+<div class="form-field"><label for="enquiry-message">Your enquiry *</label><textarea id="enquiry-message" name="message" rows="6" required minlength="15" maxlength="1500" placeholder="Share the details that will help us respond..."></textarea><small>Enter at least 15 characters.</small></div>
+<p class="form-feedback" id="enquiry-feedback" role="status" aria-live="polite"></p>
+<button class="btn btn-primary btn-full" type="submit">Prepare Enquiry Email</button>
+<p class="form-note">This static website prepares an email in your device's default email application. It does not send data to a server.</p>
+</form>
+</div>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer-content">
+    <div>
+      <h4>Zulu Sunset Lodge</h4>
+      <p>A 4-star cultural boutique lodge celebrating Zulu heritage, comfort and unforgettable stays.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Suites & Villas</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="events.html">Weddings &amp; Events</a></li>
+        <li><a href="enquiry.html">Make an Enquiry</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>North Coast, KwaZulu-Natal<br>+27 (0) 32 555 1234<br>reservations@zulusunset.co.za</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; <span id="year"></span> Zulu Sunset Lodge. All rights reserved.</div>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
